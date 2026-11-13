@@ -1,0 +1,33 @@
+{
+  "name": "travel-tracker",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Free, local-first travel tracker PWA: countries, US states, cities and pins.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "data": "node scripts/build-data.mjs",
+    "icons": "node scripts/make-icons.mjs"
+  },
+  "dependencies": {
+    "@preact/signals": "^2.11.4",
+    "idb": "^8.0.4",
+    "maplibre-gl": "^6.18.0",
+    "preact": "^11.2.0"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.6",
+    "@types/geojson": "^7946.0.16",
+    "@types/node": "^26.6.6",
+    "fake-indexeddb": "^6.2.8",
+    "mapshaper": "^0.7.101",
+    "sharp": "^0.35.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "vite-plugin-pwa": "^2.0.0",
+    "vitest": "^5.1.0"
+  }
+}
